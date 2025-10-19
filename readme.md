@@ -57,6 +57,30 @@ Also, adjust other experimental parameters as needed:
 - `TARGET_GPU`: Set the GPU ID you wish to use (e.g., `"0"`).
 - `BATCH_SIZE`, `LEARNING_RATE`, `NUM_EPOCHS`, etc.
 
+The final file tree will be：
+
+```plaintext
+    DATASET
+    └──AG_NEWS
+    sparse_lora
+    ├── deberta-v3-small-local
+    │   ├── added_tokens.json
+    │   ├── config.json
+    │   ├── model.safetensors
+    │   ├── special_tokens_map.json
+    │   ├── spm.model
+    │   ├── tokenizer_config.json
+    │   └── tokenizer.json
+    ├── metrics
+    │   └── accuracy
+    │       └── ...
+    ├── results
+    │   └── ...
+    ├── full_lora.py
+    ├── readme.md
+    └── sparse_lora.py
+```
+
 ## 3\. How to Run
 
 After completing the configuration, run the script from your terminal:
