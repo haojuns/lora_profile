@@ -76,7 +76,6 @@ The final file tree will be：
     │       └── ...
     ├── results
     │   └── ...
-    ├── full_lora.py
     ├── readme.md
     └── sparse_lora.py
 ```
